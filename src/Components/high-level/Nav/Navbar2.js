@@ -1,20 +1,9 @@
-import "./Navbar.css";
-
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Button from "../../low-level/Button/Button";
+import Button2 from "../../low-level/Button/Button2";
+import "./Navbar2.css";
 
-function Navbar() {
-  const [LargeView, setLargeView] = useState(true);
-  const handleView = () => {
-    if (window.innerWidth <= 1075) {
-      setLargeView(false);
-    } else {
-      setLargeView(true);
-    }
-  };
-  window.addEventListener("resize", handleView);
-
+function Navbar2() {
   const [MobileNavIsOpen, setMobileNavIsOpen] = useState(false);
   const handleMobileNav = () => setMobileNavIsOpen(!MobileNavIsOpen);
   const closeMobileNav = () => setMobileNavIsOpen(false);
@@ -23,23 +12,18 @@ function Navbar() {
     { textNode: "Home", to: "/" },
     { textNode: "Services", to: "/services" },
     { textNode: "Products", to: "/products" },
-    { textNode: "Sign Up1", to: "/signUp" },
   ];
-
-  useEffect(() => {
-    handleView();
-  }, []);
 
   return (
     <nav>
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          Component Play <i className="fa-solid fa-hammer"></i>
+          Navbar2 <i className="fa-solid fa-hammer"></i>
         </Link>
-        <div className="menu-icon" onClick={handleMobileNav}>
+        <div className="mobile-icon" onClick={handleMobileNav}>
           <i className={MobileNavIsOpen ? "fas fa-times" : "fas fa-bars"}></i>
         </div>
-        <ul className={MobileNavIsOpen ? "mobile-nav active" : "mobile-nav"}>
+        <ul className={MobileNavIsOpen ? "nav-menu active" : "nav-menu"}>
           {navList.map((Listitem) => {
             return (
               <li className="nav-items">
@@ -53,15 +37,13 @@ function Navbar() {
               </li>
             );
           })}
+          <li className="nav-items">
+            <Button2>Sign Up1</Button2>
+          </li>
         </ul>
-        {LargeView && (
-          <Button to="/signUp" style={"outline"}>
-            Sign Up2
-          </Button>
-        )}
       </div>
     </nav>
   );
 }
 
-export default Navbar;
+export default Navbar2;

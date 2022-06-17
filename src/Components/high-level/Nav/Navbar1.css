@@ -47,7 +47,7 @@ nav {
   @apply /* content */ lg:text-[#fff] lg:text-4xl;
 }
 
-.mobile-nav {
+.nav-menu {
   @apply /* position conditionals*/ lg:absolute lg:top-[80px] lg:left-[-100%]
   /* content */ list-none text-center
     /* conditionals */ lg:opacity-100
@@ -58,7 +58,7 @@ nav {
     /* effect condionals */ lg:transition-all lg:duration-500 lg:ease-in;
 }
 
-.mobile-nav.active {
+.nav-menu.active {
   @apply /* position conditionals */ lg:z-[1] lg:left-0 lg:opacity-100
   /* box conditionals*/ lg:bg-[#242222]
   /* effect conditionals */ lg:transition-all lg:duration-500 lg:ease-in;

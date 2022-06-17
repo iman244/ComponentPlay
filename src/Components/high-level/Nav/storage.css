@@ -11,3 +11,9 @@
     /* within box */ flex items-center
     /* UI */ cursor-pointer;
   }
+
+  .nav-items-btn {
+    @apply /* conditionals */
+    /* box */ lg:h-24 lg:w-full
+    /* within box */ lg:flex lg:justify-center lg:items-center;
+  }
