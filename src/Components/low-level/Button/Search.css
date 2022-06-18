@@ -1,0 +1,16 @@
+.search {
+    @apply
+    /* box */ bg-white rounded-[30px]
+    /* within box */ flex items-center gap-2
+}
+
+.search i {
+    @apply
+    /* box */ ml-2
+}
+
+.search input {
+    @apply
+    /* content */
+    /* box */ w-4/5 focus:outline-none
+}

@@ -1,12 +1,12 @@
 import { BrowserRouter } from "react-router-dom";
-import "./App.css";
-import Navbar_socialMedia from "./Components/high-level/Nav/Navbar_socialMedia";
+import NavbarSocialMedia from "./Components/high-level/Nav/NavbarSocialMedia/NavbarSocialMedia";
 
+import "./App.css";
 
 function App() {
   return (
     <BrowserRouter>
-    <Navbar_socialMedia />
+      <NavbarSocialMedia />
     </BrowserRouter>
   );
 }

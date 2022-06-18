@@ -1,0 +1,6 @@
+.il-img {
+    @apply
+    /* box */ h-8 w-8 rounded-full
+    /* contradictions */ object-cover
+    /* UI */ cursor-pointer
+}
