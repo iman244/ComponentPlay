@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Button2 from "../../low-level/Button/Button2";
+import Dropdown from "../../mid-level/Dropdown";
 import "./Navbar2.css";
 
 function Navbar2() {
@@ -37,6 +38,11 @@ function Navbar2() {
               </li>
             );
           })}
+          <li className="nav-items">
+            <Dropdown to="/dropdown" className='nav-links' onClick={closeMobileNav}>
+              Dropdown
+            </Dropdown>
+          </li>
           <li className="nav-items">
             <Button2>Sign Up1</Button2>
           </li>
