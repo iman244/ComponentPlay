@@ -1,0 +1,57 @@
+.layout {
+  @apply
+  /* box */ w-full
+  /* within box */ flex
+}
+
+.layout > * {
+    @apply
+    /* box */ m-2
+}
+
+.Sidebar {
+    flex: 2;
+    height: calc(100vh - 50px);
+}
+
+.FeedSocialMedia {
+    flex: 5;
+}
+
+.Rightbar {
+    flex: 3;
+}
+
+
+
+/* beauty */
+
+* {
+    @apply
+    /* content */ leading-normal
+}
+
+hr {
+    @apply
+    /* box */ my-5 border-gray-400
+}
+
+::-webkit-scrollbar {
+    @apply
+    /* box */ w-[5px]
+}
+
+::-webkit-scrollbar-track {
+    @apply
+    /* box */ bg-[#f1f1f1]
+}
+
+::-webkit-scrollbar-thumb {
+    @apply
+    /* box */ bg-gray-400
+}
+
+.center {
+@apply 
+/*position */ self-center
+}

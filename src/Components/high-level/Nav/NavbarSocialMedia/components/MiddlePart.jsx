@@ -1,5 +1,5 @@
 import React from "react";
-import Search from "../../../../low-level/Button/Search";
+import Search from "../../../../low-level/Search/Search";
 
 function MiddlePart() {
   return (

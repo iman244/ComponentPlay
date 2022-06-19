@@ -11,6 +11,5 @@
 
 .search input {
     @apply
-    /* content */
     /* box */ w-4/5 focus:outline-none
 }

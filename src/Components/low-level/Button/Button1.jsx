@@ -1,6 +1,6 @@
+import "./Button1.css";
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Button.css";
 
 const options_style = ["primary", "outline"];
 const options_size = ["medium", "large"];

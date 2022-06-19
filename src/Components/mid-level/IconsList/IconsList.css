@@ -1,0 +1,12 @@
+.il-iconsList {
+    @apply
+    /* box */ m-0 p-0
+}
+
+.il-iconsList li {
+    @apply
+    /* box */ p-2 rounded
+    /* UI */ cursor-pointer
+
+    /* conditionals */ hover:bg-gray-200
+}

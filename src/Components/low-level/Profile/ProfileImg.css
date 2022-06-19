@@ -1,5 +1,6 @@
-.il-img {
+.il-profileImg {
     @apply
+    /* position */ inline-block
     /* box */ h-8 w-8 rounded-full
     /* contradictions */ object-cover
     /* UI */ cursor-pointer

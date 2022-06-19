@@ -1,26 +1,9 @@
 import React from "react";
-import Icon from "../../../../low-level/Button/Icon";
-import ProfileImg from "../../../../low-level/Button/ProfileImg";
+import { icons } from "../../../../Data/NavData";
+import Icon from "../../../../low-level/Icon/Icon";
+import ProfileImg from "../../../../low-level/Profile/ProfileImg";
 
 function RightPart() {
-  const icons = [
-    {
-      name: "user",
-      icon: <i className="fa-solid fa-user"></i>,
-      badge: 1,
-    },
-    {
-      name: "message",
-      icon: <i class="fa-solid fa-message"></i>,
-      badge: 3,
-    },
-    {
-      name: "user",
-      icon: <i class="fa-solid fa-bell"></i>,
-      badge: 2,
-    },
-  ];
-
   return (
     <div className="right-part">
       <div className="links">
