@@ -2,7 +2,7 @@ import "./App.css";
 import { BrowserRouter } from "react-router-dom";
 import NavbarSocialMedia from "./Components/high-level/Nav/NavbarSocialMedia/NavbarSocialMedia";
 import Sidebar from "./Components/high-level/Sidebar/Sidebar";
-import Rightbar from "./Components/mid-level/Rightbar/Rightbar";
+import Rightbar from "./Components/high-level/Rightbar/Rightbar";
 import FeedSocialMedia from "./Components/high-level/FeedSocialMedia/FeedSocialMedia";
 
 function App() {

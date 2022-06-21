@@ -15,7 +15,11 @@ function RightPart() {
           <Icon className="icon" icon={item.icon} badge={item.badge} />
         ))}
       </div>
-      <ProfileImg src="/assets/person/1.jpeg" alt="profile" />
+      <ProfileImg
+        i_className="h-8 w-8"
+        src="/assets/person/1.jpeg"
+        alt="profile"
+      />
     </div>
   );
 }

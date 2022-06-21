@@ -1,18 +1,18 @@
 export const Data_ShareLayout = [
   {
-    icon: <i className="fa-solid fa-rss"></i>,
+    icon: <i class="fa-solid fa-photo-film"></i>,
     text: "Photo or Video",
   },
   {
-    icon: <i className="fa-solid fa-message"></i>,
+    icon: <i class="fa-solid fa-tag"></i>,
     text: "Tag",
   },
   {
-    icon: <i className="fa-solid fa-circle-play"></i>,
+    icon: <i class="fa-solid fa-location-dot"></i>,
     text: "Location",
   },
   {
-    icon: <i className="fa-solid fa-user-group"></i>,
+    icon: <i class="fa-solid fa-face-laugh-wink"></i>,
     text: "Feelings",
   },
 ];

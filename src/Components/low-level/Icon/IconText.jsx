@@ -1,11 +1,11 @@
 import "./IconText.css";
 import React from "react";
 
-function IconText({ className, icon, text }) {
+function IconText({ className, t_className, icon, text }) {
   return (
     <div className={className ? `il-iconText ${className}` : "il-iconText"}>
       {icon}
-      <span>{text}</span>
+      {text && <span className={t_className ? t_className : null}>{text}</span>}
     </div>
   );
 }

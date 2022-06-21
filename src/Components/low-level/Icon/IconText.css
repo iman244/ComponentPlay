@@ -1,6 +1,6 @@
 .il-iconText {
     @apply
-    /* within box */ flex items-center
+    /* within box */ flex items-center w-fit
 }
 
 .il-iconText i {

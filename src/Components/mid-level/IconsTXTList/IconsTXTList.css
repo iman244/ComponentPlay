@@ -1,9 +1,9 @@
-.il-iconsList {
+.il-iconsTXTList {
     @apply
-    /* box */ m-0 p-0
+    /* box */ p-0
 }
 
-.il-iconsList li {
+.il-iconsTXTList li {
     @apply
     /* box */ p-2 rounded
     /* UI */ cursor-pointer

@@ -1,18 +1,22 @@
 import "./Sidebar.css";
 import React from "react";
 import { Data_ContactList, Sidebar_icons } from "../../Data/SidebarData";
-import IconsList from "../../mid-level/IconsList/IconsList";
-import ContactList from "../../mid-level/ContactList/ContactList";
+import IconsTXTList from "../../mid-level/IconsTXTList/IconsTXTList";
 import LayoutButton from "../../low-level/Button/LayoutButton";
+import List from "../../mid-level/List/List";
 
 function Sidebar({ className }) {
   return (
     <div className={`il-sidebar ${className}`}>
       <div className="il-sidebarWrapper">
-        <IconsList data={Sidebar_icons} />
+        <IconsTXTList className="mb-2" data={Sidebar_icons} />
         <LayoutButton className="center">Show More</LayoutButton>
         <hr />
-        <ContactList data={Data_ContactList} />
+        <List
+          component="ProfileTXT"
+          data={Data_ContactList}
+          i_className="h-8 w-8"
+        />
       </div>
     </div>
   );

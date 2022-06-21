@@ -3,12 +3,7 @@
     box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
 
     @apply
-    /* box */ w-full rounded-lg
-}
-
-.il-shareWrapper {
-    @apply
-    /* box */ p-3
+    /* box */ p-3 w-full rounded-lg
 }
 
 .share-btns {
@@ -21,4 +16,8 @@
     @apply
     /* content */ text-sm
     /* within box */ flex justify-between items-center gap-2
+}
+
+.shareIconTXT > i {
+    @apply text-lg
 }

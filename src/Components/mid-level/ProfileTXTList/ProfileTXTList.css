@@ -1,9 +1,9 @@
-.il-contactList {
+.il-profileTXTList {
   @apply
   /* within box */ leading-[3rem]  
 }
 
-.il-contactList li {
+.il-profileTXTList li {
   @apply
   /* content */ text-sm
   /* box */ mb-1 p-2 rounded

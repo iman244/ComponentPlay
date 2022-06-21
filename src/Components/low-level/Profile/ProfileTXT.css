@@ -2,6 +2,7 @@
 
 .il-profileTXT {
     @apply
+    /* box */ w-fit
     /* within box */ flex items-center
 }
 

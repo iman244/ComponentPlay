@@ -1,14 +1,28 @@
+import "./ProfileImg.css";
 import React from "react";
 
-import "./ProfileImg.css";
-
-function ProfileImg({ className, src, alt }) {
+function ProfileImg({
+  className,
+  i_className,
+  s_className,
+  badge,
+  src,
+  alt,
+  badgeData,
+}) {
   return (
-    <img
-      className={className ? `il-profileImg ${className}` : "il-profileImg"}
-      src={src}
-      alt={alt}
-    />
+    <div className={className ? `il-profileImg ${className}` : "il-profileImg"}>
+      <img
+        className={i_className ? `il-img ${i_className}` : "il-img"}
+        src={src}
+        alt={alt}
+      />
+      {badge && (
+        <span className={s_className ? `badge ${s_className}` : "badge"}>
+          {badgeData}
+        </span>
+      )}
+    </div>
   );
 }
 

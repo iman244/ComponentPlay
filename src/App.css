@@ -4,13 +4,8 @@
   /* within box */ flex
 }
 
-.layout > * {
-    @apply
-    /* box */ m-2
-}
-
 .Sidebar {
-    flex: 2;
+    flex: 3;
     height: calc(100vh - 50px);
 }
 

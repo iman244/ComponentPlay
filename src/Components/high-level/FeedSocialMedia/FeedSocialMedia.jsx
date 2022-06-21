@@ -1,17 +1,20 @@
 import "./FeedSocialMedia.css";
 import React from "react";
 import Share from "../../mid-level/SocialMedia_ShareLayout/Share1";
-import CardList from "../../mid-level/CardList/CardList";
+import { Posts } from "../../Data/FeedData";
+import List from "../../mid-level/List/List";
 
 function FeedSocialMedia({ className }) {
   return (
     <div
       className={
-        className ? `il-FeedSocialMedia ${className}` : "il-FeedSocialMedia"
+        className ? `il-feedSocialMedia ${className}` : "il-feedSocialMedia"
       }
     >
-      <Share />
-      <CardList />
+      <div className="il-feedSocialMediaWrapper">
+        <Share />
+        <List component={"Post"} data={Posts} />
+      </div>
     </div>
   );
 }

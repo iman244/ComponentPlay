@@ -1,6 +1,5 @@
-import React from "react";
-
 import "./Icon.css";
+import React from "react";
 
 function Icon({ className, icon, badge }) {
   return (
